@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-    Optional<User> findByEmail_userAndPassword_user(String email_user, String password_user);
+    Optional<User> findByEmailUserAndPasswordUser(String emailUser, String passwordUser);
 }
 // O repositório UserRepository estende JpaRepository, o que fornece métodos CRUD básicos
 // e permite a criação de consultas personalizadas, como a busca por email e senha.

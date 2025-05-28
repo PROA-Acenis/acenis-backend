@@ -8,50 +8,51 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_user;
+    private Long idUser;
 
-    private String name_user;
-    private String email_user;
-    private String password_user;
-    private String phone_user;
+    private String nameUser;
+    private String emailUser;
+    private String passwordUser;
+    private String phoneUser;
 
-    public Long getId_user() {
-        return id_user;
+    // Getters e setters
+    public Long getIdUser() {
+        return idUser;
     }
 
-    public void setId_user(Long id_user) {
-        this.id_user = id_user;
+    public void setIdUser(Long idUser) {
+        this.idUser = idUser;
     }
 
-    public String getName_user() {
-        return name_user;
+    public String getNameUser() {
+        return nameUser;
     }
 
-    public void setName_user(String name_user) {
-        this.name_user = name_user;
+    public void setNameUser(String nameUser) {
+        this.nameUser = nameUser;
     }
 
-    public String getEmail_user() {
-        return email_user;
+    public String getEmailUser() {
+        return emailUser;
     }
 
-    public void setEmail_user(String email_user) {
-        this.email_user = email_user;
+    public void setEmailUser(String emailUser) {
+        this.emailUser = emailUser;
     }
 
-    public String getPassword_user() {
-        return password_user;
+    public String getPasswordUser() {
+        return passwordUser;
     }
 
-    public void setPassword_user(String password_user) {
-        this.password_user = password_user;
+    public void setPasswordUser(String passwordUser) {
+        this.passwordUser = passwordUser;
     }
 
-    public String getPhone_user() {
-        return phone_user;
+    public String getPhoneUser() {
+        return phoneUser;
     }
 
-    public void setPhone_user(String phone_user) {
-        this.phone_user = phone_user;
+    public void setPhoneUser(String phoneUser) {
+        this.phoneUser = phoneUser;
     }
 }

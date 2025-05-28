@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @PostMapping
+    @PostMapping("/register")
     public User createUser(@RequestBody User user) {
         return userRepository.save(user);
     }
@@ -29,9 +29,8 @@ public class UserController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User loginData) {
-        Optional<User> user = userRepository.findByEmail_userAndPassword_user(
-            loginData.getEmail_user(), loginData.getPassword_user()
-        );
+        Optional<User> user = userRepository.findByEmailUserAndPasswordUser(
+                loginData.getEmailUser(), loginData.getPasswordUser());
 
         if (user.isPresent()) {
             return ResponseEntity.ok(user.get());
