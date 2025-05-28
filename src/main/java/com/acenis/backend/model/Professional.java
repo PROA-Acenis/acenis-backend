@@ -13,6 +13,7 @@ public class Professional {
     private String nameProf;
     private String emailProf;
     private String passwordProf;
+    private String phoneProf;
 
     // Getters e Setters
     public Long getIdProf() {
@@ -45,5 +46,13 @@ public class Professional {
 
     public void setPasswordProf(String passwordProf) {
         this.passwordProf = passwordProf;
+    }
+
+    public void setPhoneProf(String phoneProf) {
+        this.phoneProf = phoneProf;
+    }
+
+    public String getPhoneProf() {
+        return phoneProf;
     }
 }
